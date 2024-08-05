@@ -1,0 +1,99 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#contenedor{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+#tabla{
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#fixture{
+    width: 100%;
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    float: right;
+}
+
+#opciones{
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    margin: 10px ;
+    padding: 5px;
+}
+
+.num{
+    background-color: #9391fc;
+    color: white;
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#agregarParticipante{
+    background-color: #6461e7;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+.botonEliminar:disabled{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.botonEliminar:enabled{
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#botonGenerar, #botonExportar:enabled{
+    background-color: #6461e7;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#botonExportar:disabled{
+    padding: 10px;
+}
+
+.inputParticipante , .inputEquipo{
+    padding: 2px;
+}
+
+hr{
+    margin: 0px 10px 0px 10px;
+    color: #172abe;
+}
+
+h1{
+    top: 0;
+    left: 0;
+    color: white;
+    background-color:#3584e4;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-align: left;
+    background-color:#3584e4;
+    left: 0;
+}
+
