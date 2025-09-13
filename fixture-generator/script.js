@@ -2,8 +2,8 @@ var numeros_descartados = []
 
 function agregarParticipante() {
     var x = document.getElementsByClassName("fila_participante");
-    var num = x.length;
-    var tablerow = x[num-1].cloneNode(true);
+    var numeroDeParticipantes = x.length;
+    var tablerow = x[numeroDeParticipantes-1].cloneNode(true);
     const tabla = document.getElementById("tabla_participantes");
     tabla.appendChild(tablerow);
     var boton = tablerow.getElementsByClassName("botonEliminar");
@@ -18,17 +18,17 @@ function eliminarParticipante(toRemove) {
 }
 
 function reorganizarNumsPost(){
-    var x = document.getElementsByClassName("num");
-    for(i=0; i<x.length; i++){
-        x[i].textContent = i+1;
+    var numero = document.getElementsByClassName("numero");
+    for(i=0; i<numero.length; i++){
+        numero[i].textContent = i+1;
     }
 }
 
 function Generar(){
     const ArrayParticipantes =  [];
-    var x = document.getElementsByClassName("inputParticipante");
-    for(i=0; i<x.length; i++){
-        ArrayParticipantes.push(x[i].value);
+    var participante = document.getElementsByClassName("inputParticipante");
+    for(i=0; i<participante.length; i++){
+        ArrayParticipantes.push(participante[i].value);
     }
     //console.log(ArrayParticipantes);
     var Fechas = [];

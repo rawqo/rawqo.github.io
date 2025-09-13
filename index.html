@@ -5,15 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='stylesheet.css'>
 <title>Santiago Vazquez</title>
-<body>
 <header>
     <h1> Santiago Vazquez</h1>
 </header>
+<body>
     <!--<a href="https://github.com/rawqo/">Github</a>-->
     <br>
-    <a href="./fixture-generator/index.html">Generador de fixture</a>
+    <p>Esta pagina web esta creada con HTML, CSS y Javascript en su forma mas pura. :)</p>
+    <p>Hacer click en cualquiera de las ventanas de color, te redireccionara a su correspondiente sitio.</p>
+
+
+    <div class="grid-cartas">
+
+      <div>
+      <fieldset class="Carta-categoria">
+
+        <legend class="Carta-categoria-titulo">Sobre Mi</legend>
+
+        <fieldset class="Carta" id="Carta2" onclick="location.href = '';">
+          <legend class="Carta-titulo">CV</legend>
+          <p class="Carta-descripcion">El titulo lo dice todo.</p>
+        </fieldset>
+
+        <fieldset class="Carta" id="Carta3" onclick="location.href = 'linkedin.com/in/santiagovazquez27/';">
+        <legend class="Carta-titulo">LinkedIn</legend>
+        <p class="Carta-descripcion">Mi red social de trabajo.</p>
+        </fieldset>
+
+        <fieldset class="Carta" id="Carta4" onclick="location.href = 'https://github.com/rawqo/';">
+          <legend class="Carta-titulo">Github</legend>
+          <p class="Carta-descripcion">Aca es donde subo la mayoria de mis proyectos.</p>
+        </fieldset>
+
+      </fieldset>
+      </div>
+
+      <div>
+      <fieldset class="Carta-categoria">
+
+        <legend class="Carta-categoria-titulo">Proyectos</legend>
+
+        <fieldset class="Carta" id="Carta1" onclick="location.href = './fixture-generator/index.html';">
+          <legend class="Carta-titulo">Generador de Fixture</legend>
+          <p class="Carta-descripcion">Para cuando te juntas con amigos a jugar al FIFA/PES.
+          Se encarga de realizar el sorteo de fase de grupos, organizar a tus amigos en cada grupo y generar los partidos.</p>
+        </fieldset>
+
+      </fieldset>
+      </div>
+
+
+      <div>
+      <fieldset class="Carta-categoria">
+
+        <legend class="Carta-categoria-titulo">WIP</legend>
+
+        <fieldset class="Carta" id="Carta5">
+          <legend class="Carta-titulo">Lorem Ipsum</legend>
+          <p class="Carta-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor dolor massa, eget aliquet erat dignissim vel. Quisque ut sem velit. Sed id lacus ac est bibendum laoreet a id neque.</p>
+        </fieldset>
+
+      </fieldset>
+      </div>
+
+
+    </div>
     <br>
     <img src="./files/gifs/sonic_running.gif" height="10%">
 </body>
-<footer>@rawqo</footer>
+<footer>
+<a href="https://github.com/rawqo">@rawqo</a>
+</footer>
 </html>

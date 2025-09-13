@@ -1,3 +1,13 @@
+/* Listado de colores
+ *  #FFFFFF
+ *  #000000
+ *  #BD3B1F -   Rojizo
+ *  #D2BF94 -   Beige accent principal
+ *  #F5E9CD -   Semi beige y blanco
+ *  #E2B147 -   Amarillo ocre
+ *  #CC7E00 -   Anaranjado oscurecido
+*/
+
 *{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -30,12 +40,12 @@
     padding: 5px;
 }
 
-.num{
+.numero{
     background-color: #9391fc;
     color: white;
     border-radius: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
 }
 
@@ -43,34 +53,47 @@
     background-color: #6461e7;
     color: white;
     width: 100%;
-    padding: 5px;
+    padding: 1em;
 }
 
 .botonEliminar:disabled{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .botonEliminar:enabled{
     background-color: red;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #botonGenerar, #botonExportar:enabled{
     background-color: #6461e7;
     color: white;
-    padding: 10px;
-    margin: 10px;
+    padding: 1em;
+    margin: 1em;
 }
 
 #botonExportar:disabled{
-    padding: 10px;
+    padding: 1em;
 }
 
 .inputParticipante , .inputEquipo{
     padding: 2px;
+}
+
+fieldset {
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
 }
 
 hr{

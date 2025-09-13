@@ -8,8 +8,8 @@
     <div id="opciones">
         <p>Seleccione la configuracion con respecto al tipo de torneo a jugarse:</p>
         <fieldset class="formato_torneo">
-            <legend>Tipo de torneo:</legend>
-          
+            <legend>Formato del torneo:</legend>
+
             <div>
               <input type="radio" id="liga" name="tipo_torneo" value="liga" checked />
               <label for="liga">Liga</label>
@@ -44,25 +44,25 @@
             <th>Equipo</th>
         </tr>
         <tr class="fila_participante">
-            <td class="num">1</td>
+            <td class="numero">1</td>
             <td><input type="text" class="inputParticipante"></td>
             <td><input type="text" class="inputEquipo"></td>
             <td><button class="botonEliminar" onclick="eliminarParticipante(this.parentNode.parentNode)" disabled>Eliminar</button></td>
         </tr>
         <tr class="fila_participante">
-            <td class="num">2</td>
+            <td class="numero">2</td>
             <td><input type="text" class="inputParticipante"></td>
             <td><input type="text" class="inputEquipo"></td>
             <td><button class="botonEliminar" onclick="eliminarParticipante(this.parentNode.parentNode)" disabled>Eliminar</button></td>
         </tr>
         <tr class="fila_participante">
-            <td class="num">3</td>
+            <td class="numero">3</td>
             <td><input type="text" class="inputParticipante"></td>
             <td><input type="text" class="inputEquipo"></td>
             <td><button class="botonEliminar" onclick="eliminarParticipante(this.parentNode.parentNode)" disabled>Eliminar</button></td>
         </tr>
         <tr class="fila_participante">
-            <td class="num">4</td>
+            <td class="numero">4</td>
             <td><input type="text" class="inputParticipante"></td>
             <td><input type="text" class="inputEquipo"></td>
             <td><button class="botonEliminar" onclick="eliminarParticipante(this.parentNode.parentNode)" disabled>Eliminar</button></td>
@@ -80,5 +80,7 @@
     <button id="botonExportar" disabled>Exportar como CSV</button>
     <button onclick="Descarte(1, 6)">Generar</button>
 </body>
-<footer>@rawqo</footer>
+<footer>
+<a href="https://github.com/rawqo">@rawqo</a>
+</footer>
 </html>
