@@ -15,40 +15,39 @@
     ></script>
     <body>
         <!--<a href="https://github.com/rawqo/">Github</a>-->
-        <br />
-        <p>
-            Esta pagina web esta creada con HTML, CSS y Javascript en su forma
-            mas pura. :)
-        </p>
-        <p>
-            Hacer click en cualquiera de las ventanas de color, te
-            redireccionara a su correspondiente sitio.
-        </p>
 
         <!--Seccion sobre mi--->
         <div id="div-carta-sobremi">
-            <fieldset class="Carta-categoria">
-                <legend class="Carta-categoria-titulo">Sobre Mi</legend>
+            <fieldset class="Categoria">
+                <legend class="Categoria-titulo">Sobre Mi</legend>
+                <p>
+                    Todavia estoy pensando en que poner aca. Si se te ocurre
+                    algo, podes enviarme tu sugerencia al
+                    <a
+                        href="mailto:santivaz232@gmail.com?subject=Sugerencia%20Pagina%20Web"
+                        >siguiente correo</a
+                    >
+                </p>
             </fieldset>
         </div>
 
         <div class="grid-categorias">
             <!--Seccion contacto--->
             <div id="div-carta-contacto">
-                <fieldset class="Carta-categoria">
-                    <legend class="Carta-categoria-titulo">Contacto</legend>
+                <fieldset class="Categoria">
+                    <legend class="Categoria-titulo">Contacto</legend>
                     <!--<img src="./files/img/sonic.png" />--->
                     <fieldset
-                        class="Carta Carta3"
+                        class="Carta Carta1"
                         onclick="location.href = 'https://linkedin.com/in/santiagovazquez27/';"
                     >
                         <legend class="Carta-titulo">LinkedIn</legend>
                         <p class="Carta-descripcion">
-                            Mi red social de trabajo.
+                            Mi red social profesional.
                         </p>
                     </fieldset>
 
-                    <fieldset class="Carta Carta2">
+                    <fieldset class="Carta Carta1">
                         <legend class="Carta-titulo">CV</legend>
                         <p class="Carta-descripcion">El titulo lo dice todo.</p>
                     </fieldset>
@@ -58,26 +57,26 @@
                         onclick="location.href = 'https://github.com/rawqo/';"
                     >
                         <legend class="Carta-titulo">Github</legend>
-                        <p class="Carta-descripcion">
-                            Aca es donde subo la mayoria de mis proyectos
-                        </p>
+                        <p class="Carta-descripcion">Mi perfil.</p>
                     </fieldset>
                 </fieldset>
             </div>
 
             <!--Seccion proyectos--->
             <div id="div-carta-proyectos">
-                <fieldset class="Carta-categoria">
-                    <legend class="Carta-categoria-titulo">Proyectos</legend>
+                <fieldset class="Categoria">
+                    <legend class="Categoria-titulo">Proyectos</legend>
                     <!--<img src="./files/img/shadow.png" />--->
                     <div class="grid-proyectos">
                         <fieldset
-                            class="Carta_proyecto"
+                            class="Proyecto"
                             onclick="location.href = './pages/projects/fixture-generator/index.html';"
                         >
-                            <h1 class="Carta-titulo">Generador de Fixture</h1>
+                            <h1 class="Proyecto-titulo">
+                                Generador de Fixture
+                            </h1>
                             <br />
-                            <p class="Carta-descripcion">
+                            <p class="Proyecto-descripcion">
                                 Para cuando te juntas con amigos a jugar al
                                 FIFA/PES. Se encarga de realizar el sorteo de
                                 fase de grupos, organizar a tus amigos en cada
@@ -87,10 +86,10 @@
                             <label class="tag tag-2">Web</label>
                         </fieldset>
 
-                        <fieldset class="Carta_proyecto">
-                            <h1 class="Carta-titulo">Pool 2D</h1>
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">Pool 2D</h1>
                             <br />
-                            <p class="Carta-descripcion">
+                            <p class="Proyecto-descripcion">
                                 Esto es una descripcion muy simple del proyecto
                                 en godot
                             </p>
@@ -98,22 +97,20 @@
                             <label class="tag tag-1">Gamedev</label>
                         </fieldset>
 
-                        <fieldset class="Carta_proyecto">
-                            <h1 class="Carta-titulo">KIMSIR</h1>
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">KIMSIR</h1>
                             <br />
-                            <p class="Carta-descripcion">
+                            <p class="Proyecto-descripcion">
                                 Kit Motorizado de Silla de Ruedas
                             </p>
                             <br />
-                            <label class="tag tag-2">Web</label>
-                            <label class="tag tag-4">Programacion</label>
                             <label class="tag tag-3">Electronica</label>
                         </fieldset>
 
-                        <fieldset class="Carta_proyecto">
-                            <h1 class="Carta-titulo">RWXBOT</h1>
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">RWXBOT</h1>
                             <br />
-                            <p class="Carta-descripcion">
+                            <p class="Proyecto-descripcion">
                                 Un bot simple de discord que te permite escuchar
                                 musica. Creado con la documentacion oficial de
                                 discord.js
@@ -126,9 +123,17 @@
             </div>
             <!--Seccion extra--->
             <div id="div-carta-extra">
-                <fieldset class="Carta-categoria">
-                    <legend class="Carta-categoria-titulo">Extra</legend>
+                <fieldset class="Categoria">
+                    <legend class="Categoria-titulo">Extra</legend>
                     <img src="./files/gifs/sonic_running.gif" />
+                    <p>
+                        Esta pagina web esta creada con HTML, CSS y Javascript
+                        en su forma mas pura. :)
+                    </p>
+                    <p>
+                        Hacer click en cualquiera de las ventanas de color, te
+                        redireccionara a su correspondiente sitio.
+                    </p>
                 </fieldset>
             </div>
         </div>
