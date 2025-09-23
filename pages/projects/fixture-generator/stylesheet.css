@@ -1,0 +1,206 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    color: black;
+    width: 100%;
+    background-color: lavender;
+    padding: 1em;
+    top: 0px;
+    text-align: center;
+}
+
+.grid-cartas {
+    display: inline-grid;
+    padding: 0;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+}
+
+.Carta {
+    width: 20em;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 0em;
+}
+
+.Carta-categoria {
+    width: 20em;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 0em;
+}
+
+.Carta-categoria-titulo {
+    border-radius: 1em;
+    border-width: 2px;
+    border-style: dotted;
+    text-wrap: nowrap;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+    font-weight: normal;
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+.Carta-titulo {
+    border-radius: 1em;
+    border-width: 2px;
+    border-style: dotted;
+    text-wrap: nowrap;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+    font-weight: normal;
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: 1.5em;
+    letter-spacing: 0em;
+}
+
+.Carta-descripcion {
+    color: black;
+    letter-spacing: 0em;
+    font-size: 1em;
+}
+
+#Carta1 {
+    background-color: #fcdc83;
+}
+
+#Carta2 {
+    background-color: #d5e0f5;
+}
+
+#Carta3 {
+    background-color: #7e98f7;
+}
+
+#Carta4 {
+    background-color: #d5f5ea;
+}
+
+#Carta5 {
+    background-color: #f2aad3;
+}
+
+#Carta6 {
+    background-color: #b2aaf2;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    color: black;
+    text-align: right;
+    background-color: lavender;
+    padding: 0.1em;
+}
+
+/* Listado de colores
+ *  #FFFFFF
+ *  #000000
+ *  #BD3B1F -   Rojizo
+ *  #D2BF94 -   Beige accent principal
+ *  #F5E9CD -   Semi beige y blanco
+ *  #E2B147 -   Amarillo ocre
+ *  #CC7E00 -   Anaranjado oscurecido
+*/
+
+#contenedor {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+#tabla {
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#fixture {
+    width: 100%;
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    float: right;
+}
+
+#opciones {
+    background-color: #d6e7ff;
+    border: 2px solid lightblue;
+    margin: 10px;
+    padding: 5px;
+}
+
+.numero {
+    background-color: #9391fc;
+    color: white;
+    border-radius: 100%;
+    padding: 1em;
+    text-align: center;
+}
+
+.boton {
+    padding: 1em;
+}
+
+#agregarParticipante {
+    background-color: #6461e7;
+    color: white;
+    width: 100%;
+    padding: 1em;
+}
+
+.botonEliminar:disabled {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.botonEliminar:enabled {
+    background-color: red;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#botonGenerar,
+#botonExportar:enabled {
+    background-color: #6461e7;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+}
+
+#botonExportar:disabled {
+    padding: 1em;
+}
+
+.inputParticipante,
+.inputEquipo {
+    padding: 2px;
+}
+
+hr {
+    margin: 0px 10px 0px 10px;
+    color: #172abe;
+}

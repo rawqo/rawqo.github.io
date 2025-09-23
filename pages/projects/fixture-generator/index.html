@@ -1,0 +1,160 @@
+<html>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <noscript
+        >Please enable Javascript to view this page! // Por favor active
+        Javascript para la correcta visualizacion de esta pagina
+    </noscript>
+    <title>WIP</title>
+    <header>
+        <h1>Generador de Fixture</h1>
+    </header>
+    <body>
+        <div id="opciones">
+            <p>
+                Seleccione la configuracion con respecto al tipo de torneo a
+                jugarse:
+            </p>
+            <fieldset class="Carta-categoria" id="formato_torneo">
+                <legend class="Carta-categoria-titulo">
+                    Formato del torneo:
+                </legend>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="liga"
+                        name="tipo_torneo"
+                        value="liga"
+                        checked
+                    />
+                    <label for="liga">Liga</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="copa"
+                        name="tipo_torneo"
+                        value="copa"
+                    />
+                    <label for="copa">Copa</label>
+                </div>
+            </fieldset>
+            <fieldset class="Carta-categoria" id="formato_partidos">
+                <legend class="Carta-categoria-titulo">
+                    Formato de partidos:
+                </legend>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="ida"
+                        name="partidos"
+                        value="ida"
+                        checked
+                    />
+                    <label for="ida">Partido unico</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="idavuelta"
+                        name="partidos"
+                        value="idavueta"
+                    />
+                    <label for="idavuelta">Ida y vuelta</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="contenedor">
+            <div id="tabla">
+                <table id="tabla_participantes">
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Equipo</th>
+                    </tr>
+                    <tr class="fila_participante">
+                        <td class="numero">1</td>
+                        <td><input type="text" class="inputParticipante" /></td>
+                        <td><input type="text" class="inputEquipo" /></td>
+                        <td>
+                            <button
+                                class="botonEliminar"
+                                onclick="eliminarParticipante(this.parentNode.parentNode)"
+                                disabled
+                            >
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="fila_participante">
+                        <td class="numero">2</td>
+                        <td><input type="text" class="inputParticipante" /></td>
+                        <td><input type="text" class="inputEquipo" /></td>
+                        <td>
+                            <button
+                                class="botonEliminar"
+                                onclick="eliminarParticipante(this.parentNode.parentNode)"
+                                disabled
+                            >
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="fila_participante">
+                        <td class="numero">3</td>
+                        <td><input type="text" class="inputParticipante" /></td>
+                        <td><input type="text" class="inputEquipo" /></td>
+                        <td>
+                            <button
+                                class="botonEliminar"
+                                onclick="eliminarParticipante(this.parentNode.parentNode)"
+                                disabled
+                            >
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="fila_participante">
+                        <td class="numero">4</td>
+                        <td><input type="text" class="inputParticipante" /></td>
+                        <td><input type="text" class="inputEquipo" /></td>
+                        <td>
+                            <button
+                                class="botonEliminar"
+                                onclick="eliminarParticipante(this.parentNode.parentNode)"
+                                disabled
+                            >
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <button
+                    id="agregarParticipante"
+                    onclick="agregarParticipante()"
+                >
+                    Agregar participante
+                </button>
+            </div>
+            <div id="fixture">
+                <p>
+                    Aca se tienen que generar los resultados y se tiene que ver
+                    el fixture, o los partidos de playoffs
+                </p>
+            </div>
+        </div>
+        <hr />
+        <button id="botonGenerar" onclick="Generar()">Generar</button>
+        <button id="botonExportar" disabled>Exportar como CSV</button>
+        <button onclick="Descarte(1, 6)">Generar</button>
+    </body>
+    <footer>
+        <a href="https://github.com/rawqo">@rawqo</a>
+    </footer>
+</html>

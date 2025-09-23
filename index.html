@@ -1,79 +1,146 @@
 <html>
-<meta http-equiv='cache-control' content='no-cache'>
-<meta http-equiv='expires' content='0'>
-<meta http-equiv='pragma' content='no-cache'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='stylesheet.css'>
-<title>Santiago Vazquez</title>
-<header>
-    <h1> Santiago Vazquez</h1>
-</header>
-<body>
-    <!--<a href="https://github.com/rawqo/">Github</a>-->
-    <br>
-    <p>Esta pagina web esta creada con HTML, CSS y Javascript en su forma mas pura. :)</p>
-    <p>Hacer click en cualquiera de las ventanas de color, te redireccionara a su correspondiente sitio.</p>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Santiago Vazquez</title>
+    <header>
+        <h1>Santiago Vazquez</h1>
+    </header>
+    <script
+        type="text/javascript"
+        type="module"
+        src="fetch_subdirs.js"
+    ></script>
+    <body>
+        <!--<a href="https://github.com/rawqo/">Github</a>-->
+        <br />
+        <p>
+            Esta pagina web esta creada con HTML, CSS y Javascript en su forma
+            mas pura. :)
+        </p>
+        <p>
+            Hacer click en cualquiera de las ventanas de color, te
+            redireccionara a su correspondiente sitio.
+        </p>
 
+        <!--Seccion sobre mi--->
+        <div id="div-carta-sobremi">
+            <fieldset class="Carta-categoria">
+                <legend class="Carta-categoria-titulo">Sobre Mi</legend>
+            </fieldset>
+        </div>
 
-    <div class="grid-cartas">
+        <div class="grid-categorias">
+            <!--Seccion contacto--->
+            <div id="div-carta-contacto">
+                <fieldset class="Carta-categoria">
+                    <legend class="Carta-categoria-titulo">Contacto</legend>
+                    <!--<img src="./files/img/sonic.png" />--->
+                    <fieldset
+                        class="Carta Carta3"
+                        onclick="location.href = 'https://linkedin.com/in/santiagovazquez27/';"
+                    >
+                        <legend class="Carta-titulo">LinkedIn</legend>
+                        <p class="Carta-descripcion">
+                            Mi red social de trabajo.
+                        </p>
+                    </fieldset>
 
-      <div>
-      <fieldset class="Carta-categoria">
+                    <fieldset class="Carta Carta2">
+                        <legend class="Carta-titulo">CV</legend>
+                        <p class="Carta-descripcion">El titulo lo dice todo.</p>
+                    </fieldset>
 
-        <legend class="Carta-categoria-titulo">Sobre Mi</legend>
+                    <fieldset
+                        class="Carta Carta1"
+                        onclick="location.href = 'https://github.com/rawqo/';"
+                    >
+                        <legend class="Carta-titulo">Github</legend>
+                        <p class="Carta-descripcion">
+                            Aca es donde subo la mayoria de mis proyectos
+                        </p>
+                    </fieldset>
+                </fieldset>
+            </div>
 
-        <fieldset class="Carta" id="Carta2" onclick="location.href = '';">
-          <legend class="Carta-titulo">CV</legend>
-          <p class="Carta-descripcion">El titulo lo dice todo.</p>
-        </fieldset>
+            <!--Seccion proyectos--->
+            <div id="div-carta-proyectos">
+                <fieldset class="Carta-categoria">
+                    <legend class="Carta-categoria-titulo">Proyectos</legend>
+                    <!--<img src="./files/img/shadow.png" />--->
+                    <div class="grid-proyectos">
+                        <fieldset
+                            class="Carta_proyecto"
+                            onclick="location.href = './pages/projects/fixture-generator/index.html';"
+                        >
+                            <h1 class="Carta-titulo">Generador de Fixture</h1>
+                            <br />
+                            <p class="Carta-descripcion">
+                                Para cuando te juntas con amigos a jugar al
+                                FIFA/PES. Se encarga de realizar el sorteo de
+                                fase de grupos, organizar a tus amigos en cada
+                                grupo y generar los partidos.
+                            </p>
+                            <br />
+                            <label class="tag tag-2">Web</label>
+                        </fieldset>
 
-        <fieldset class="Carta" id="Carta3" onclick="location.href = 'https://linkedin.com/in/santiagovazquez27/';">
-        <legend class="Carta-titulo">LinkedIn</legend>
-        <p class="Carta-descripcion">Mi red social de trabajo.</p>
-        </fieldset>
+                        <fieldset class="Carta_proyecto">
+                            <h1 class="Carta-titulo">Pool 2D</h1>
+                            <br />
+                            <p class="Carta-descripcion">
+                                Esto es una descripcion muy simple del proyecto
+                                en godot
+                            </p>
+                            <br />
+                            <label class="tag tag-1">Gamedev</label>
+                        </fieldset>
 
-        <fieldset class="Carta" id="Carta4" onclick="location.href = 'https://github.com/rawqo/';">
-          <legend class="Carta-titulo">Github</legend>
-          <p class="Carta-descripcion">Aca es donde subo la mayoria de mis proyectos.</p>
-        </fieldset>
+                        <fieldset class="Carta_proyecto">
+                            <h1 class="Carta-titulo">KIMSIR</h1>
+                            <br />
+                            <p class="Carta-descripcion">
+                                Kit Motorizado de Silla de Ruedas
+                            </p>
+                            <br />
+                            <label class="tag tag-2">Web</label>
+                            <label class="tag tag-4">Programacion</label>
+                            <label class="tag tag-3">Electronica</label>
+                        </fieldset>
 
-      </fieldset>
-      </div>
+                        <fieldset class="Carta_proyecto">
+                            <h1 class="Carta-titulo">RWXBOT</h1>
+                            <br />
+                            <p class="Carta-descripcion">
+                                Un bot simple de discord que te permite escuchar
+                                musica. Creado con la documentacion oficial de
+                                discord.js
+                            </p>
+                            <br />
+                            <label class="tag tag-4">Programacion</label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Seccion extra--->
+            <div id="div-carta-extra">
+                <fieldset class="Carta-categoria">
+                    <legend class="Carta-categoria-titulo">Extra</legend>
+                    <img src="./files/gifs/sonic_running.gif" />
+                </fieldset>
+            </div>
+        </div>
 
-      <div>
-      <fieldset class="Carta-categoria">
-
-        <legend class="Carta-categoria-titulo">Proyectos</legend>
-
-        <fieldset class="Carta" id="Carta1" onclick="location.href = './fixture-generator/index.html';">
-          <legend class="Carta-titulo">Generador de Fixture</legend>
-          <p class="Carta-descripcion">Para cuando te juntas con amigos a jugar al FIFA/PES.
-          Se encarga de realizar el sorteo de fase de grupos, organizar a tus amigos en cada grupo y generar los partidos.</p>
-        </fieldset>
-
-      </fieldset>
-      </div>
-
-
-      <div>
-      <fieldset class="Carta-categoria">
-
-        <legend class="Carta-categoria-titulo">WIP</legend>
-
-        <fieldset class="Carta" id="Carta5">
-          <legend class="Carta-titulo">Lorem Ipsum</legend>
-          <p class="Carta-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor dolor massa, eget aliquet erat dignissim vel. Quisque ut sem velit. Sed id lacus ac est bibendum laoreet a id neque.</p>
-        </fieldset>
-
-      </fieldset>
-      </div>
-
-
-    </div>
-    <br>
-    <img src="./files/gifs/sonic_running.gif" height="10%">
-</body>
-<footer>
-<a href="https://github.com/rawqo">@rawqo</a>
-</footer>
+        <!--Seccion comentarios--->
+        <!--
+        <div id="div-carta-comentarios">
+            <fieldset class="Carta-categoria">
+                <legend class="Carta-categoria-titulo">Comentarios</legend>
+                <button>Escribir un comentario</button>
+            </fieldset>
+        </div>
+        --->
+    </body>
 </html>

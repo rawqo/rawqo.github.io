@@ -1,4 +1,4 @@
-*{
+* {
     font-family: sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-header{
+header {
     top: 0;
     left: 0;
     color: black;
@@ -16,62 +16,82 @@ header{
     text-align: center;
 }
 
-
-.grid-cartas {
+.grid-categorias {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 0px;
-    margin: 0px;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0%;
 }
 
 .Carta {
-    width: 20em;
     color: black;
     padding: 1em;
     margin: 1em;
-    border-style: dotted;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 0em;
+    border-style: none;
+    border-radius: 1em 30em 30em 30em;
+}
+
+.Carta:hover {
+    box-shadow: 5px 5px gainsboro;
+    cursor: pointer;
+}
+
+.Carta_proyecto {
+    color: black;
+    padding: 1em;
+    margin: 8px;
+    border-style: none;
+    border-radius: 0 1em 1em 1em;
+    background-color: lavender;
+}
+
+.Carta_proyecto:hover {
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 5px 5px mediumpurple;
+    border-width: 3px;
+    border-color: mediumpurple;
+    border-style: solid;
 }
 
 .Carta-categoria {
-    width: 20em;
+    width: 100%/3;
     color: black;
     padding: 1em;
     margin: 1em;
-    border-style: dotted;
-    border-width: 2px;
+    border-style: solid;
+    border-width: 1px;
     border-color: black;
     border-radius: 0em;
 }
 
 .Carta-categoria-titulo {
-    border-radius: 1em;
-    border-width: 2px;
-    border-style: dotted;
     text-wrap: nowrap;
     text-align: center;
     background-color: inherit;
     color: inherit;
     font-weight: normal;
     padding: 0em 0.5em 0em 0.5em;
-    font-size: 1.5em;
-    letter-spacing: 0em;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
 .Carta-titulo {
     border-radius: 1em;
-    border-width: 2px;
-    border-style: dotted;
+    border-width: 1px;
+    border-style: none;
     text-wrap: nowrap;
-    text-align: center;
+    text-align: left;
     background-color: inherit;
     color: inherit;
     font-weight: normal;
-    padding: 0em 0.5em 0em 0.5em;
-    font-size: 1.5em;
+    padding: 0em 0.3em 0em 0.3em;
+    font-size: 1.3em;
     letter-spacing: 0em;
 }
 
@@ -79,34 +99,53 @@ header{
     color: black;
     letter-spacing: 0em;
     font-size: 1em;
-
 }
 
-#Carta1 {
-    background-color: #fcdc83;
+.Carta1 {
+    background-color: beige;
 }
 
-#Carta2 {
+.Carta2 {
     background-color: #d5e0f5;
 }
 
-#Carta3 {
+.Carta3 {
     background-color: #7e98f7;
 }
 
-#Carta4 {
-    background-color: #d5f5ea;
+.tag {
+    border-radius: 30em 30em 30em 30em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    padding: 0em 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
 }
 
-#Carta5 {
-    background-color: #f2aad3;
+.tag-1 {
+    background-color: dodgerblue;
 }
 
-#Carta6 {
-    background-color: #b2aaf2;
+.tag-2 {
+    background-color: orangered;
 }
 
-footer{
+.tag-3 {
+    background-color: olivedrab;
+}
+
+.tag-4 {
+    background-color: goldenrod;
+}
+
+.tag-5 {
+    background-color: gold;
+    color: black;
+}
+
+footer {
     width: 100%;
     position: fixed;
     bottom: 0;
