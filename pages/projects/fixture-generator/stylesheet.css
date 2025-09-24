@@ -1,78 +1,99 @@
 * {
     font-family: sans-serif;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
     text-align: center;
+    background-color: snow;
 }
 
 header {
-    color: black;
-    width: 100%;
-    background-color: lavender;
-    padding: 1em;
-    top: 0px;
-    text-align: center;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: royalblue;
+    position: sticky;
+    font-weight: normal;
+    padding: 0.5em 0em 0.5em 2em;
+    font-size: 0.7em;
+    text-align: left;
+    margin-bottom: 2em;
 }
 
-.grid-cartas {
-    display: inline-grid;
-    padding: 0;
+.grid-categorias {
+    display: grid;
     grid-template-columns: auto auto auto;
-    margin: 0;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0%;
 }
 
 .Carta {
-    width: 20em;
     color: black;
     padding: 1em;
     margin: 1em;
-    border-style: dotted;
-    border-width: 2px;
+    border-style: none;
+    border-radius: 1em 30em 30em 30em;
+}
+
+.Carta:hover {
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: whitesmoke;
+    padding: 0.9em;
+}
+
+.Categoria {
+    width: 100%/3;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-width: 1px;
     border-color: black;
     border-radius: 0em;
 }
 
-.Carta-categoria {
-    width: 20em;
-    color: black;
-    padding: 1em;
-    margin: 1em;
-    border-style: dotted;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 0em;
-}
-
-.Carta-categoria-titulo {
-    border-radius: 1em;
-    border-width: 2px;
-    border-style: dotted;
+.Categoria-titulo {
     text-wrap: nowrap;
     text-align: center;
     background-color: inherit;
     color: inherit;
     font-weight: normal;
     padding: 0em 0.5em 0em 0.5em;
-    font-size: 1.5em;
-    letter-spacing: 0em;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
 .Carta-titulo {
-    border-radius: 1em;
-    border-width: 2px;
-    border-style: dotted;
+    border-radius: 0em 1em 1em 0em;
+    border-width: 1px;
+    border-style: none;
     text-wrap: nowrap;
-    text-align: center;
+    text-align: left;
     background-color: inherit;
     color: inherit;
-    font-weight: normal;
-    padding: 0em 0.5em 0em 0.5em;
-    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0em 0.3em 0em 0.3em;
+    font-size: 1.3em;
     letter-spacing: 0em;
+}
+
+.Carta-titulo:hover {
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: whitesmoke;
 }
 
 .Carta-descripcion {
@@ -81,34 +102,93 @@ header {
     font-size: 1em;
 }
 
-#Carta1 {
-    background-color: #fcdc83;
+.Carta1 {
+    background-color: linen;
 }
 
-#Carta2 {
+.Carta2 {
     background-color: #d5e0f5;
 }
 
-#Carta3 {
+.Carta3 {
     background-color: #7e98f7;
 }
 
-#Carta4 {
-    background-color: #d5f5ea;
+.Proyecto {
+    color: black;
+    padding: 1em;
+    margin: 8px;
+    border-style: none;
+    border-radius: 0 1em 1em 1em;
+    background-color: linen;
 }
 
-#Carta5 {
-    background-color: #f2aad3;
+.Proyecto:hover {
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 5px 5px black;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: cornsilk;
 }
 
-#Carta6 {
-    background-color: #b2aaf2;
+.Proyecto-titulo {
+    border-radius: 0em 1em 1em 0em;
+    border-width: 1px;
+    border-style: none;
+    text-wrap: nowrap;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+    font-weight: bold;
+    padding: 0em 0.3em 0em 0.3em;
+    font-size: 1.3em;
+    letter-spacing: 0em;
+}
+
+.Proyecto-descripcion {
+    color: black;
+    letter-spacing: 0em;
+    font-size: 1em;
+}
+
+.tag {
+    border-radius: 30em 30em 30em 30em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    padding: 0em 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.tag-1 {
+    background-color: dodgerblue;
+}
+
+.tag-2 {
+    background-color: orangered;
+}
+
+.tag-3 {
+    background-color: olivedrab;
+}
+
+.tag-4 {
+    background-color: goldenrod;
+}
+
+.tag-5 {
+    background-color: gold;
+    color: black;
 }
 
 footer {
     width: 100%;
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
     color: black;
     text-align: right;
     background-color: lavender;
@@ -183,16 +263,11 @@ footer {
     padding-right: 1em;
 }
 
-#botonGenerar,
-#botonExportar:enabled {
+.boton:enabled {
     background-color: #6461e7;
     color: white;
     padding: 1em;
     margin: 1em;
-}
-
-#botonExportar:disabled {
-    padding: 1em;
 }
 
 .inputParticipante,

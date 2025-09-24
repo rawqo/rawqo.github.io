@@ -5,7 +5,7 @@
 
 body {
     text-align: center;
-    background-color: snow;
+    background-color: white;
 }
 
 header {
@@ -46,8 +46,17 @@ header {
     border-width: 3px;
     border-color: black;
     border-style: solid;
-    background-color: whitesmoke;
-    padding: 0.9em;
+    padding: 1em;
+    background-color: lightcyan;
+}
+
+.Carta:hover > .Carta-titulo {
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: lightcyan;
 }
 
 .Categoria {
@@ -82,18 +91,9 @@ header {
     background-color: inherit;
     color: inherit;
     font-weight: bold;
-    padding: 0em 0.3em 0em 0.3em;
+    padding: 0em 0.5em 0em 0.3em;
     font-size: 1.3em;
     letter-spacing: 0em;
-}
-
-.Carta-titulo:hover {
-    box-shadow: 5px 5px black;
-    cursor: pointer;
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
-    background-color: whitesmoke;
 }
 
 .Carta-descripcion {
@@ -103,7 +103,7 @@ header {
 }
 
 .Carta1 {
-    background-color: linen;
+    background-color: aliceblue;
 }
 
 .Carta2 {
@@ -181,8 +181,11 @@ header {
 }
 
 .tag-5 {
-    background-color: gold;
-    color: black;
+    background-color: darkorchid;
+}
+
+.tag-6 {
+    background-color: coral;
 }
 
 footer {

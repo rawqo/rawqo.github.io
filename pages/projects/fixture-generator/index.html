@@ -7,7 +7,7 @@
     </noscript>
     <title>WIP</title>
     <header>
-        <h1>Generador de Fixture</h1>
+        <h1>Santiago Vazquez > Generador de fixture</h1>
     </header>
     <body>
         <div id="opciones">
@@ -142,7 +142,7 @@
                     Agregar participante
                 </button>
             </div>
-            <div id="fixture">
+            <div class="Categoria" id="fixture">
                 <p>
                     Aca se tienen que generar los resultados y se tiene que ver
                     el fixture, o los partidos de playoffs
@@ -150,11 +150,14 @@
             </div>
         </div>
         <hr />
-        <button id="botonGenerar" onclick="Generar()">Generar</button>
-        <button id="botonExportar" disabled>Exportar como CSV</button>
-        <button onclick="Descarte(1, 6)">Generar</button>
+        <button class="boton" id="botonGenerar" onclick="Generar()">
+            Generar
+        </button>
+        <button class="boton" id="botonExportar" disabled>
+            Exportar como CSV
+        </button>
+        <button class="boton" onclick="Descarte(1, 6)">
+            Descartar numeros
+        </button>
     </body>
-    <footer>
-        <a href="https://github.com/rawqo">@rawqo</a>
-    </footer>
 </html>
