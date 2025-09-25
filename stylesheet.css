@@ -1,6 +1,11 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Helvetica", sans-serif;
     margin: 0;
+}
+
+@font-face {
+    font-family: Poppins; /* set name */
+    src: url(Poppins-Regular.otf); /* url of the font */
 }
 
 body {
