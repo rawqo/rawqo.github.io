@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
@@ -190,11 +190,14 @@ header {
 
 .pelota {
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    animation: bounce 1s ease-in-out infinite;
-    animation-fill-mode: both;
-    animation-direction: alternate;
+    width: 10px;
+    height: 10px;
+    animation: bounce 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 .dot {
@@ -205,13 +208,32 @@ header {
 }
 
 @keyframes bounce {
-    from {
-        top: 25%;
-        transform: scaleX(79.5%) scaleY(65%);
+    0% {
+        top: 0;
+        -webkit-animation-timing-function: ease-in;
     }
-    to {
-        top: 55%;
+    40% {
     }
+    50% {
+        top: 70%;
+        -webkit-animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80%;
+        -webkit-animation-timing-function: ease-in;
+    }
+    65% {
+        top: 60%;
+        -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+        top: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+#div-carta-extra {
+    height: 100px;
 }
 
 footer {
