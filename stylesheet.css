@@ -6,9 +6,8 @@ header {
     color: white;
     background-color: black;
     text-align: center;
-    margin-bottom: 2em;
-    padding: 1em;
-    letter-spacing: 0.5em;
+    margin-bottom: 1em;
+    padding: 2px;
 }
 
 body {
@@ -19,7 +18,7 @@ body {
 .Categoria {
     color: black;
     margin: auto;
-    width: 30%;
+    width: 20rem;
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -27,18 +26,16 @@ body {
 }
 
 .Carta {
-    width: 20vw;
+    width: 10rem;
     color: black;
-    background-color: aliceblue;
-    padding: 1em;
+    padding: 0.5em 0em;
     margin: 1em auto;
 }
 
 .Carta:hover {
-    box-shadow: 5px 5px black;
     cursor: pointer;
-    color: yellow;
-    background-color: blue;
+    color: white;
+    background-color: black;
 }
 
 a {

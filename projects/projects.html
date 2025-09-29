@@ -1,0 +1,94 @@
+<html>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Santiago Vazquez | Proyectos</title>
+    <header>
+        <h1><a href="../index.html">@raw</a> / projects</h1>
+    </header>
+    <script
+        type="text/javascript"
+        type="module"
+        src="fetch_subdirs.js"
+    ></script>
+    <body>
+        <!--<a href="https://github.com/rawqo/">Github</a>-->
+
+        <div id="div-carta-importante">
+            <fieldset class="Categoria">
+                <legend class="Categoria-titulo">WIP</legend>
+                <img src="../files/img/characters/sonic.png" />
+                <img src="../files/img/characters/shadow.png" />
+                <h2>Pagina en construccion!</h2>
+                <p>
+                    Esta pagina web esta creada con HTML, CSS y Javascript en su
+                    forma mas pura. :)
+                </p>
+                <i>
+                    Hacer click en cualquiera de las ventanas de color, te
+                    redireccionara a su correspondiente sitio.
+                </i>
+            </fieldset>
+        </div>
+
+        <!--Seccion proyectos--->
+        <div id="div-carta-proyectos">
+            <fieldset class="Categoria">
+                <legend class="Categoria-titulo">Proyectos</legend>
+                <!--<img src="./files/img/shadow.png" />--->
+                <div class="grid-proyectos">
+                    <fieldset
+                        class="Proyecto"
+                        onclick="location.href = './pages/projects/fixture-generator/index.html';"
+                    >
+                        <h1 class="Proyecto-titulo">Generador de Fixture</h1>
+                        <br />
+                        <p class="Proyecto-descripcion">
+                            Para cuando te juntas con amigos a jugar al
+                            FIFA/PES. Se encarga de realizar el sorteo de fase
+                            de grupos, organizar a tus amigos en cada grupo y
+                            generar los partidos.
+                        </p>
+                        <br />
+                        <label class="tag tag-2">Web</label>
+                    </fieldset>
+
+                    <fieldset class="Proyecto">
+                        <h1 class="Proyecto-titulo">Pool 2D</h1>
+                        <br />
+                        <p class="Proyecto-descripcion">
+                            Esto es una descripcion muy simple del proyecto en
+                            godot
+                        </p>
+                        <br />
+                        <label class="tag tag-1">Gamedev</label>
+                    </fieldset>
+
+                    <fieldset class="Proyecto">
+                        <h1 class="Proyecto-titulo">KIMSIR</h1>
+                        <br />
+                        <p class="Proyecto-descripcion">
+                            Kit Motorizado de Silla de Ruedas
+                        </p>
+                        <br />
+                        <label class="tag tag-3">Electronica</label>
+                    </fieldset>
+
+                    <fieldset class="Proyecto">
+                        <h1 class="Proyecto-titulo">RWXBOT</h1>
+                        <br />
+                        <p class="Proyecto-descripcion">
+                            Un bot simple de discord que te permite escuchar
+                            musica. Creado con la documentacion oficial de
+                            discord.js
+                        </p>
+                        <br />
+                        <label class="tag tag-4">Programacion</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+    </body>
+</html>
