@@ -5,7 +5,7 @@
 
 header {
     color: white;
-    background-color: cadetblue;
+    background-color: black;
     position: sticky;
     text-align: left;
     margin-bottom: 2em;
@@ -21,6 +21,10 @@ body {
     background-color: white;
 }
 
+#div-carta-proyectos {
+    margin: auto;
+}
+
 .grid-proyectos {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -28,7 +32,7 @@ body {
 }
 
 .Categoria {
-    width: 100%/3;
+    width: 100%/5;
     color: black;
     padding: 1em;
     margin: 1em;
@@ -45,91 +49,62 @@ body {
     color: inherit;
     font-weight: normal;
     padding: 0em 0.5em 0em 0.5em;
-    font-size: 1.2em;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
-.Carta-titulo {
-    border-radius: 0em 1em 1em 0em;
-    border-width: 1px;
-    border-style: none;
-    text-wrap: nowrap;
-    text-align: left;
-    background-color: inherit;
-    color: inherit;
-    font-weight: bold;
-    padding: 0em 0.5em 0em 0.3em;
-    font-size: 1.3em;
-    letter-spacing: 0em;
-}
-
-.Carta-descripcion {
-    color: black;
-    letter-spacing: 0em;
-    font-size: 1em;
-}
-
-.Carta1 {
-    background-color: aliceblue;
-}
-
-.Carta2 {
-    background-color: #d5e0f5;
-}
-
-.Carta3 {
-    background-color: #7e98f7;
-}
-
 .Proyecto {
     color: black;
-    padding: 1em;
-    margin: 8px;
-    border-style: none;
-    border-radius: 0 1em 1em 1em;
-    background-color: linen;
+    padding: 0.2em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    background-color: ghostwhite;
+    text-decoration: none;
+    margin: 5px;
 }
 
 .Proyecto:hover {
-    cursor: pointer;
-    margin: 5px;
-    box-shadow: 5px 5px black;
-    border-width: 3px;
+    border-width: 1px;
     border-color: black;
     border-style: solid;
-    background-color: cornsilk;
 }
 
 .Proyecto-titulo {
-    border-radius: 0em 1em 1em 0em;
-    border-width: 1px;
-    border-style: none;
-    text-wrap: nowrap;
     text-align: left;
     background-color: inherit;
     color: inherit;
-    font-weight: bold;
-    padding: 0em 0.3em 0em 0.3em;
-    font-size: 1.3em;
-    letter-spacing: 0em;
+
+    position: sticky;
+    bottom: 100%;
 }
 
 .Proyecto-descripcion {
-    color: black;
-    letter-spacing: 0em;
-    font-size: 1em;
+    color: inherit;
+    text-align: left;
+    text-wrap: balance;
+    position: relative;
+    width: 100%;
+    vertical-align: text-top;
+    overflow: hidden;
+}
+
+.Proyecto-imagen {
+    position: sticky;
+    bottom: 100%;
+    height: 10ch;
+    width: 10ch;
 }
 
 .tag {
-    border-radius: 30em 30em 30em 30em;
-    font-size: 0.8em;
+    border-radius: 100ch;
     font-weight: bold;
     color: white;
     padding: 0em 0.5em;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    margin-top: 2em;
+    text-transform: lowercase;
+    position: sticky;
+    bottom: 100%;
+    left: 100%;
 }
 
 .tag-1 {

@@ -4,9 +4,9 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <title>Santiago Vazquez | Proyectos</title>
+    <title>Proyectos | Santiago Vazquez</title>
     <header>
-        <h1><a href="../index.html">@raw</a> / projects</h1>
+        <h2><a href="../index.html">@raw</a> / projects</h2>
     </header>
     <body>
         <!--<a href="https://github.com/rawqo/">Github</a>-->
@@ -14,9 +14,10 @@
         <div id="div-carta-importante">
             <fieldset class="Categoria">
                 <legend class="Categoria-titulo">WIP</legend>
-                <img src="../files/img/characters/sonic.png" />
+
                 <img src="../files/img/characters/shadow.png" />
                 <h2>Pagina en construccion!</h2>
+                <!---
                 <p>
                     Esta pagina web esta creada con HTML, CSS y Javascript en su
                     forma mas pura. :)
@@ -25,6 +26,7 @@
                     Hacer click en cualquiera de las ventanas de color, te
                     redireccionara a su correspondiente sitio.
                 </i>
+                -->
             </fieldset>
         </div>
 
@@ -34,54 +36,108 @@
                 <legend class="Categoria-titulo">Proyectos</legend>
                 <!--<img src="./files/img/shadow.png" />--->
                 <div class="grid-proyectos">
-                    <fieldset
-                        class="Proyecto"
-                        onclick="location.href = './pages/projects/fixture-generator/index.html';"
-                    >
-                        <h1 class="Proyecto-titulo">Generador de Fixture</h1>
-                        <br />
-                        <p class="Proyecto-descripcion">
-                            Para cuando te juntas con amigos a jugar al
-                            FIFA/PES. Se encarga de realizar el sorteo de fase
-                            de grupos, organizar a tus amigos en cada grupo y
-                            generar los partidos.
-                        </p>
-                        <br />
-                        <label class="tag tag-2">Web</label>
-                    </fieldset>
+                    <a class="Proyecto" href="./fixture-generator/index.html">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        class="Proyecto-imagen"
+                                        src="../files/img/characters/shadow.png"
+                                    />
+                                </td>
+                                <td class="Proyecto-descripcion">
+                                    <h3>Generador de Fixture</h3>
+                                    <p>
+                                        Para cuando te juntas con amigos a jugar
+                                        al FIFA/PES. Realiza el sorteo de fase
+                                        de grupos, y genera los partidos.
+                                    </p>
+                                    <label class="tag tag-2">Web</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 
-                    <fieldset class="Proyecto">
-                        <h1 class="Proyecto-titulo">Pool 2D</h1>
-                        <br />
-                        <p class="Proyecto-descripcion">
-                            Esto es una descripcion muy simple del proyecto en
-                            godot
-                        </p>
-                        <br />
-                        <label class="tag tag-1">Gamedev</label>
-                    </fieldset>
+                    <a class="Proyecto" href="">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        class="Proyecto-imagen"
+                                        src="../files/img/characters/sonic.png"
+                                    />
+                                </td>
+                                <td class="Proyecto-descripcion">
+                                    <h3>Pool 2D</h3>
+                                    <p>
+                                        Un juego de Pool muy simple en 2D.
+                                        Realizado en Godot con GDScript.
+                                    </p>
+                                    <label class="tag tag-1">Gamedev</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 
-                    <fieldset class="Proyecto">
-                        <h1 class="Proyecto-titulo">KIMSIR</h1>
-                        <br />
-                        <p class="Proyecto-descripcion">
-                            Kit Motorizado de Silla de Ruedas
-                        </p>
-                        <br />
-                        <label class="tag tag-3">Electronica</label>
-                    </fieldset>
+                    <a class="Proyecto" href="./kimsir/index.html">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        class="Proyecto-imagen"
+                                        src="../files/img/projects-logos/Kimsir.png"
+                                    />
+                                </td>
+                                <td class="Proyecto-descripcion">
+                                    <h3>KIMSIR</h3>
+                                    <p>KIT MOTORIZADO PARA SILLA DE RUEDAS.</p>
+                                    <label class="tag tag-3">Electronica</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 
-                    <fieldset class="Proyecto">
-                        <h1 class="Proyecto-titulo">RWXBOT</h1>
-                        <br />
-                        <p class="Proyecto-descripcion">
-                            Un bot simple de discord que te permite escuchar
-                            musica. Creado con la documentacion oficial de
-                            discord.js
-                        </p>
-                        <br />
-                        <label class="tag tag-4">Programacion</label>
-                    </fieldset>
+                    <a class="Proyecto" href="./fixture-generator/index.html">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        class="Proyecto-imagen"
+                                        src="../files/img/projects-logos/Sonata.png"
+                                    />
+                                </td>
+                                <td class="Proyecto-descripcion">
+                                    <h3>Sonata</h3>
+                                    <p>
+                                        Un bot simple de discord que te permite
+                                        escuchar musica. Creado con la
+                                        documentacion oficial de discord.js
+                                    </p>
+                                    <label class="tag tag-4"
+                                        >Programacion</label
+                                    >
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+
+                    <a class="Proyecto" href="./fixture-generator/index.html">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        class="Proyecto-imagen"
+                                        src="../files/img/projects-logos/Drone.png"
+                                    />
+                                </td>
+                                <td class="Proyecto-descripcion">
+                                    <h3 class="Proyecto-titulo">DAR</h3>
+                                    <p>Drone Autonomo de Rescate</p>
+                                    <label class="tag tag-3">Electronica</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
                 </div>
             </fieldset>
         </div>
