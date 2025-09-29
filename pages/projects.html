@@ -1,0 +1,178 @@
+<html>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Santiago Vazquez</title>
+    <header>
+        <h1>Santiago Vazquez</h1>
+    </header>
+    <script
+        type="text/javascript"
+        type="module"
+        src="fetch_subdirs.js"
+    ></script>
+    <body>
+        <!--<a href="https://github.com/rawqo/">Github</a>-->
+
+        <div id="div-carta-importante">
+            <fieldset class="Categoria">
+                <legend class="Categoria-titulo">WIP</legend>
+                <img src="./files/img/characters/sonic.png" />
+                <img src="./files/img/characters/shadow.png" />
+                <h2>Pagina en construccion!</h2>
+                <p>
+                    Esta pagina web esta creada con HTML, CSS y Javascript
+                    en su forma mas pura. :)
+                </p>
+                <i>
+                    Hacer click en cualquiera de las ventanas de color, te
+                    redireccionara a su correspondiente sitio.
+                </i>
+            </fieldset>
+        </div>
+    </div>
+
+
+        <!--Seccion sobre mi--->
+        <div id="div-carta-sobremi">
+            <fieldset class="Categoria">
+                <legend class="Categoria-titulo">Sobre Mi</legend>
+                <!--
+                <p>
+                    Mis hobbies:
+                    <label class="tag tag-2">Web</label>
+                    <label class="tag tag-4">Programacion</label>
+                    <label class="tag tag-1">Gamedev</label>
+                    <label class="tag tag-3">Electronica</label>
+                </p>
+                --->
+                <p>
+                    Todavia estoy pensando en que poner aca. Si se te ocurre
+                    algo, podes enviarme tu sugerencia al
+                    <a
+                        href="mailto:santivaz232@gmail.com?subject=Sugerencia%20Pagina%20Web"
+                        >siguiente correo</a
+                    >
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="grid-categorias">
+            <!--Seccion contacto--->
+            <div id="div-carta-contacto">
+                <fieldset class="Categoria">
+                    <legend class="Categoria-titulo">Contacto</legend>
+                    <!--<img src="./files/img/sonic.png" />--->
+                    <fieldset
+                        class="Carta Carta1"
+                        onclick="location.href = 'https://linkedin.com/in/santiagovazquez27/';"
+                    >
+                        <legend class="Carta-titulo">LinkedIn</legend>
+                        <p class="Carta-descripcion">
+                            Mi red social profesional.
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="Carta Carta1">
+                        <legend class="Carta-titulo">CV</legend>
+                        <p class="Carta-descripcion">El titulo lo dice todo.</p>
+                    </fieldset>
+
+                    <fieldset
+                        class="Carta Carta1"
+                        onclick="location.href = 'https://github.com/rawqo/';"
+                    >
+                        <legend class="Carta-titulo">Github</legend>
+                        <p class="Carta-descripcion">Mi perfil.</p>
+                    </fieldset>
+                </fieldset>
+            </div>
+
+            <!--Seccion proyectos--->
+            <div id="div-carta-proyectos">
+                <fieldset class="Categoria">
+                    <legend class="Categoria-titulo">Proyectos</legend>
+                    <!--<img src="./files/img/shadow.png" />--->
+                    <div class="grid-proyectos">
+                        <fieldset
+                            class="Proyecto"
+                            onclick="location.href = './pages/projects/fixture-generator/index.html';"
+                        >
+                            <h1 class="Proyecto-titulo">
+                                Generador de Fixture
+                            </h1>
+                            <br />
+                            <p class="Proyecto-descripcion">
+                                Para cuando te juntas con amigos a jugar al
+                                FIFA/PES. Se encarga de realizar el sorteo de
+                                fase de grupos, organizar a tus amigos en cada
+                                grupo y generar los partidos.
+                            </p>
+                            <br />
+                            <label class="tag tag-2">Web</label>
+                        </fieldset>
+
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">Pool 2D</h1>
+                            <br />
+                            <p class="Proyecto-descripcion">
+                                Esto es una descripcion muy simple del proyecto
+                                en godot
+                            </p>
+                            <br />
+                            <label class="tag tag-1">Gamedev</label>
+                        </fieldset>
+
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">KIMSIR</h1>
+                            <br />
+                            <p class="Proyecto-descripcion">
+                                Kit Motorizado de Silla de Ruedas
+                            </p>
+                            <br />
+                            <label class="tag tag-3">Electronica</label>
+                        </fieldset>
+
+                        <fieldset class="Proyecto">
+                            <h1 class="Proyecto-titulo">RWXBOT</h1>
+                            <br />
+                            <p class="Proyecto-descripcion">
+                                Un bot simple de discord que te permite escuchar
+                                musica. Creado con la documentacion oficial de
+                                discord.js
+                            </p>
+                            <br />
+                            <label class="tag tag-4">Programacion</label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Seccion extra--->
+            <div>
+                <fieldset class="Categoria" id="div-carta-extra">
+                    <legend class="Categoria-titulo">Extra</legend>
+                    <!---
+                    <div class="dot"></div>
+                    --->
+                    <div class="pelota tag-1"></div>
+                    <div class="pelota tag-2"></div>
+                    <div class="pelota tag-3"></div>
+                    <div class="pelota tag-4"></div>
+
+                </fieldset>
+            </div>
+        </div>
+
+        <!--Seccion comentarios--->
+        <!--
+        <div id="div-carta-comentarios">
+            <fieldset class="Carta-categoria">
+                <legend class="Carta-categoria-titulo">Comentarios</legend>
+                <button>Escribir un comentario</button>
+            </fieldset>
+        </div>
+        --->
+    </body>
+</html>

@@ -1,0 +1,252 @@
+* {
+    font-family: "Poppins", "Helvetica", sans-serif;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Poppins; /* set name */
+    src: url(Poppins-Regular.otf); /* url of the font */
+}
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: royalblue;
+    position: sticky;
+    font-weight: normal;
+    padding: 0.5em 0em 0.5em 2em;
+    font-size: 0.7em;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0%;
+}
+
+.Carta {
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    border-style: none;
+    border-radius: 1em 30em 30em 30em;
+}
+
+.Carta:hover {
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 1em;
+    background-color: lightcyan;
+}
+
+.Carta:hover > .Carta-titulo {
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: lightcyan;
+}
+
+.Categoria {
+    width: 100%/3;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0em;
+}
+
+.Categoria-titulo {
+    text-wrap: nowrap;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+    font-weight: normal;
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.Carta-titulo {
+    border-radius: 0em 1em 1em 0em;
+    border-width: 1px;
+    border-style: none;
+    text-wrap: nowrap;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+    font-weight: bold;
+    padding: 0em 0.5em 0em 0.3em;
+    font-size: 1.3em;
+    letter-spacing: 0em;
+}
+
+.Carta-descripcion {
+    color: black;
+    letter-spacing: 0em;
+    font-size: 1em;
+}
+
+.Carta1 {
+    background-color: aliceblue;
+}
+
+.Carta2 {
+    background-color: #d5e0f5;
+}
+
+.Carta3 {
+    background-color: #7e98f7;
+}
+
+.Proyecto {
+    color: black;
+    padding: 1em;
+    margin: 8px;
+    border-style: none;
+    border-radius: 0 1em 1em 1em;
+    background-color: linen;
+}
+
+.Proyecto:hover {
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 5px 5px black;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: cornsilk;
+}
+
+.Proyecto-titulo {
+    border-radius: 0em 1em 1em 0em;
+    border-width: 1px;
+    border-style: none;
+    text-wrap: nowrap;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+    font-weight: bold;
+    padding: 0em 0.3em 0em 0.3em;
+    font-size: 1.3em;
+    letter-spacing: 0em;
+}
+
+.Proyecto-descripcion {
+    color: black;
+    letter-spacing: 0em;
+    font-size: 1em;
+}
+
+.tag {
+    border-radius: 30em 30em 30em 30em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    padding: 0em 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.tag-1 {
+    background-color: dodgerblue;
+}
+
+.tag-2 {
+    background-color: orangered;
+}
+
+.tag-3 {
+    background-color: olivedrab;
+}
+
+.tag-4 {
+    background-color: goldenrod;
+}
+
+.tag-5 {
+    background-color: darkorchid;
+}
+
+.tag-6 {
+    background-color: coral;
+}
+
+.pelota {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    animation: bounce 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.dot {
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    40% {
+    }
+    50% {
+        top: 70%;
+        -webkit-animation-timing-function: ease-out;
+    }
+    55% {
+        top: 80%;
+        -webkit-animation-timing-function: ease-in;
+    }
+    65% {
+        top: 60%;
+        -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+        top: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+#div-carta-extra {
+    height: 100px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    text-align: right;
+    background-color: lavender;
+    padding: 0.1em;
+}

@@ -1,3 +1,13 @@
+/*  Tengo que hacer botones que me indican la configuracion de la competicion
+    Simplificar el sistema de equipos a que solo se ingrese el campo del equipo
+    Despues, tengo que revisar que se puedan agregar participantes o eliminarlos sin problema respetando un minimo de 4.
+    Hacer algoritmo para que tome numeros pares de jugadores en el sistema de copa/liga y deje llaves/fechas libres.
+    Averiguar sobre como funciona la generacion de numeros random en Javascript.
+    Generar un estilo simple de como se veria la llave/fecha en HTML con CSS y copiarlo para el resto de llaves.
+    Mostrar resultados acordes al tamaño en pantalla.
+    No sacar los ajustes de la pagina, asi se pueden cambiar en cualquier momento sin tener que recargar la pagina.
+*/
+
 var numeros_descartados = [];
 
 function agregarParticipante() {
